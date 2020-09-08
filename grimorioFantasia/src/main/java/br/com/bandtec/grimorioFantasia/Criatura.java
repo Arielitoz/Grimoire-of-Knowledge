@@ -16,6 +16,7 @@ public class Criatura extends cartasMagic{
     //Methods
 
     @Override
+    //getCalcularPreco
     public Double calcularPrecoMédio() {
         return super.getPrecoCarta() * 2.50;
     }
