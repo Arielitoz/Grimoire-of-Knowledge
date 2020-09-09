@@ -20,9 +20,9 @@ public abstract class Personagem {
     }
 
     //Methods
-        public abstract Integer calculaPoder();
+        public abstract Integer getcalculaPoder();
 
-        public abstract  Double calculaNivel();
+        public abstract  Double getcalculaNivel();
 
      //Getter & Setter
 

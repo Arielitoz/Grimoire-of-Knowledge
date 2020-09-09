@@ -21,12 +21,12 @@ public class Vilao extends Personagem {
 
 
     @Override
-    public Integer calculaPoder() {
+    public Integer getcalculaPoder() {
         return (super.getPoderPersonagem() * super.getAtributo()) * 2;
     }
 
     @Override
-    public Double calculaNivel() {
+    public Double getcalculaNivel() {
         return getLevelPersonagem() * 1.75;
     }
 

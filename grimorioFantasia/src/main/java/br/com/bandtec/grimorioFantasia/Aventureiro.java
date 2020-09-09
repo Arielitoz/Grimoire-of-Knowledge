@@ -18,12 +18,12 @@ public class Aventureiro extends Personagem {
     //Methods
 
     @Override
-    public Integer calculaPoder() {
-        return (super.getPoderPersonagem() * super.getAtributo())/2;
+    public Integer getcalculaPoder() {
+        return (super.getPoderPersonagem() * super.getAtributo() + 25)/2;
     }
 
     @Override
-    public Double calculaNivel() {
+    public Double getcalculaNivel() {
         return super.getLevelPersonagem() * 1.25;
     }
 
