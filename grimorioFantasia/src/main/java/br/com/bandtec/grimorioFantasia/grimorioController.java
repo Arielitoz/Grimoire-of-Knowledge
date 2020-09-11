@@ -33,7 +33,7 @@ public class grimorioController {
             if (chars.isEmpty()) {
                 return ResponseEntity.status(201).build();
             } else {
-                return ResponseEntity.ok(chars.get(codC -1));
+                return ResponseEntity.ok(chars.get(codC - 1));
             }
 
         }
@@ -52,7 +52,7 @@ public class grimorioController {
             return ResponseEntity.status(201).build();
         }
 
-    @DeleteMapping("/kill/{id}")
+    @DeleteMapping("/kill/{idChar}")
     public ResponseEntity killChar(@PathVariable Integer idChar) {
         if (chars.size() >= idChar) {
             chars.remove(idChar - 1);

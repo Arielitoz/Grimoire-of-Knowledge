@@ -14,19 +14,19 @@ public class cardsController {
 
     //----------------------------------------------------------
     @GetMapping()
-    public ResponseEntity listarP(){
+    public ResponseEntity ListarC(){
         return ResponseEntity.status(201).body(cards);
     }
     //__________________________________________________________
     @PostMapping("/adicionar")
-    public ResponseEntity adicionarLivro(@RequestBody cartasMagic cm) {
+    public ResponseEntity addCarta(@RequestBody cartasMagic cm) {
         cards.add(cm);
         //Requestbody(passando o corpo/form. Usado apenas em Post/Put
         return ResponseEntity.status(201).build();
     }
     //__________________________________________________________
     @PostMapping("/criatura")
-    public ResponseEntity addAventureiro(@RequestBody Criatura cardC) {
+    public ResponseEntity addCriatura(@RequestBody Criatura cardC) {
         cards.add(cardC);
         //Requestbody(passando o corpo/form. Usado apenas em Post/Put
         return ResponseEntity.status(201).build();
